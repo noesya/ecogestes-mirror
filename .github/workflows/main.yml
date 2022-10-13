@@ -19,6 +19,6 @@ jobs:
         run: |-
           git config user.name "Bot"
           git add file/ecowatt.json
-          git commit -m "Updated with latest Ecowatt file"
+          git commit -m "Updated with latest Ecowatt file" || echo "Nothing to commit"
           git push
           
